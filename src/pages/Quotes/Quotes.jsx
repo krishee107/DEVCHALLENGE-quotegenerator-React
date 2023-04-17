@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import CachedIcon from '@mui/icons-material/Cached';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Quotes.css'
 
 const Quotes = () => {
@@ -37,8 +38,19 @@ const Quotes = () => {
       <div className="quote">
         <div className="quoteText">"{quote.text}"</div>
 
-        <div className="quoteAuthor">{quote.author}</div>
-        <div className="quoteGenre">{quote.genre}</div>
+
+        <div className="quotesFooter">
+          <div className="quotesFooterLeft">
+            <div className="quoteAuthor">{quote.author}</div>
+            <div className="quoteGenre">{quote.genre}</div>
+          </div>
+
+          <div className="quotesFooterRight">
+            <div className="quotesArrow"><ArrowRightAltIcon style={{ fontSize: 40 }} /></div>
+          </div>
+
+
+        </div>
       </div>
     </div>
 
