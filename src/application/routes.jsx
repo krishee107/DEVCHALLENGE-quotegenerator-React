@@ -3,7 +3,7 @@ import Quotes from '../pages/Quotes/Quotes';
 import QuotesAuthor from '../pages/QuotesAuthor/QuotesAuthor';
 
 const Router = () => (
-    <BrowserRouter basename='/quotes'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
             <Route index element={<Quotes />} />
             <Route path="/author/:author" element={<QuotesAuthor />} />
