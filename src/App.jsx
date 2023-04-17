@@ -1,10 +1,5 @@
-import Quotes from './pages/Quotes/Quotes'
+import Routes from './application/routes'
 
-function App() {
-
-  return (
-    <Quotes />
-  )
-}
+const App = () => <Routes />;
 
 export default App
