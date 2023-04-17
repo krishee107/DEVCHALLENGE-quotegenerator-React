@@ -1,0 +1,56 @@
+.quotesBox {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    padding: 30px 100px;
+    box-sizing: border-box;
+}
+
+.header {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: right;
+    color: #4F4F4F;
+    display: flex;
+    justify-content: right;
+    gap: 11px;
+    cursor: pointer;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quoteText {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 120%;
+    border-left: 3px solid #F7DF94;
+    padding-left: 100px;
+}
+
+.quoteAuthor {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4F4F4F;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.quoteGenre {
+    padding-left: 100px;
+    padding-top: 8px;
+    color: #828282;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
