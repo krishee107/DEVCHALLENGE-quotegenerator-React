@@ -24,7 +24,6 @@ const Quotes = () => {
       author: data.data[0].quoteAuthor,
       genre: data.data[0].quoteGenre
     })
-    console.log("entra")
   }
 
 

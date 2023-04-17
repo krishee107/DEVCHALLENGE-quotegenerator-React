@@ -1,4 +1,4 @@
-import Quotes from './Components/Quotes/Quotes'
+import Quotes from './pages/Quotes/Quotes'
 
 function App() {
 
