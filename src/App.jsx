@@ -1,9 +1,9 @@
+import Quotes from './Components/Quotes/Quotes'
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-    </div>
+    <Quotes />
   )
 }
 
