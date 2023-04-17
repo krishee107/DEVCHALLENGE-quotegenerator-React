@@ -3,6 +3,7 @@ import { useState } from "react";
 import CachedIcon from '@mui/icons-material/Cached';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './Quotes.css'
+import { Link } from "react-router-dom";
 
 const Quotes = () => {
   const [quote, setQuote] = useState({
@@ -38,19 +39,19 @@ const Quotes = () => {
       <div className="quote">
         <div className="quoteText">"{quote.text}"</div>
 
+        <Link to={`/author/${encodeURIComponent(quote.author)}`} style={{ textDecoration: `none` }}>
+          <div className="quotesFooter">
+            <div className="quotesFooterLeft">
+              <div className="quoteAuthor">{quote.author}</div>
+              <div className="quoteGenre">{quote.genre}</div>
+            </div>
 
-        <div className="quotesFooter">
-          <div className="quotesFooterLeft">
-            <div className="quoteAuthor">{quote.author}</div>
-            <div className="quoteGenre">{quote.genre}</div>
+            <div className="quotesFooterRight">
+              <div className="quotesArrow"><ArrowRightAltIcon style={{ fontSize: 40 }} /></div>
+            </div>
           </div>
+        </Link>
 
-          <div className="quotesFooterRight">
-            <div className="quotesArrow"><ArrowRightAltIcon style={{ fontSize: 40 }} /></div>
-          </div>
-
-
-        </div>
       </div>
     </div>
 
