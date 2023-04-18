@@ -3,7 +3,7 @@ import Quotes from '../pages/Quotes/Quotes';
 import QuotesAuthor from '../pages/QuotesAuthor/QuotesAuthor';
 
 const Router = () => (
-    <BrowserRouter basename="/DEVCHALLENGE-quotegenerator-React/my-app">
+    <BrowserRouter basename="/DEVCHALLENGE-quotegenerator-React">
         <Routes>
             <Route index element={<Quotes />} />
             <Route path="/author/:author" element={<QuotesAuthor />} />
